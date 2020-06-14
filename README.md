@@ -1,4 +1,4 @@
-# bilibiliplayer.io
+# bilibiliplayer
 
 ### B站视频自动播放小脚本
 
