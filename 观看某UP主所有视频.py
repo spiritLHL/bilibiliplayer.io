@@ -56,11 +56,11 @@ for i in urls:
     list_time = jieba.lcut(page_text)
     wait = int(list_time[-3]) * 60 + int(list_time[-1])#播放时长获取
     driver.find_element_by_xpath(
-        '/html/body/div[3]/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div[1]/div[9]/div[2]/div[2]/div[1]/div[1]/button[1]')
+        '/html/body/div[2]/div[2]/div[1]/div[2]/div/div[1]/div/div[1]/div[1]/div[10]/div[2]/div[2]/div[1]/div[1]/button')
     time.sleep(4)
     print('控件抓取成功')
     driver.find_element_by_xpath(
-        '/html/body/div[3]/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div[1]/div[9]/div[2]/div[2]/div[1]/div[1]/button[1]').click()
+        '/html/body/div[2]/div[2]/div[1]/div[2]/div/div[1]/div/div[1]/div[1]/div[10]/div[2]/div[2]/div[1]/div[1]/button').click()
     time.sleep(3)
     print('播放成功')
     print(f'播放时长{wait}秒')
